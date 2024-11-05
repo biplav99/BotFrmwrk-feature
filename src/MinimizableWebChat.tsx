@@ -46,8 +46,8 @@ function MinimizableWebChat() {
   const handleFetchToken = useCallback(async () => {
     if (!token) {
       const res = await fetch(
-        'https://hawo-mockbot4-token-app.blueriver-ce85e8f0.westus.azurecontainerapps.io/api/token/directline',
-        { method: 'POST' }
+        'https://607595053b9ae01b8318508b7c44ed.88.environment.api.powerplatform.com/powervirtualagents/botsbyschema/crd93_serviceVictoriaNew/directline/token?api-version=2022-03-01-preview',
+        { method: 'GET' }
       );
       const { token } = await res.json();
 
